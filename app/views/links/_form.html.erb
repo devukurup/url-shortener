@@ -1,0 +1,18 @@
+<%= form_with(model: link) do |form| %>
+  <div style="display: flex; flex-direction: column;">
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px ">
+      <%= form.label :url, style: "display: block; margin-right: 10px" %>
+      <%= form.text_field :url, style: "width: 100%"%>
+    </div>
+
+    <%= form.submit "Shorten Url"%>
+
+      <% if link.errors.any? %>
+    <div style="color: red">
+      <% link.errors.each do |error| %>
+        <p><%= error.full_message %></p>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+<% end %>
