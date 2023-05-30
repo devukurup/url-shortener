@@ -6,7 +6,7 @@
 
   <p>
     <strong>Shortened Url:</strong>
-    <%= link.slug %>
+    <%= link_to nil, "#{request.protocol}#{request.host_with_port}/#{link.slug}", target: "_blank" %>
   </p>
 
 </div>
