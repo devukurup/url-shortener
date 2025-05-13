@@ -1,24 +1,18 @@
-# README
+# url-shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple URL shortening service built with Ruby on Rails. Users can submit a long URL and get a shortened version with a unique slug. Visiting the shortened URL redirects to the original one.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## ✨ Core Features
 
-* System dependencies
+- Create shortened links with unique slugs  
+- Redirect to original URLs using short links  
+- Basic form-based interface for input  
 
-* Configuration
+---
 
-* Database creation
+## 🛠 Tech Stack Used
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby on Rails  
+- SQLite (for development/testing)
